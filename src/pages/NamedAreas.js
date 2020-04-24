@@ -12,7 +12,7 @@ const NamedAreas = () => {
       grid-template-areas:
         "header header header"
         "nav content ad"
-        "footer footer footer"
+        "footer footer footer";
     \`;
 
     const Header = styled(Block)\`

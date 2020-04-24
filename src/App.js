@@ -6,6 +6,10 @@ import SettingUp from "./pages/SettingUp";
 import MixedUnits from "./pages/MixedUnits";
 import PositioningElements from "./pages/PositioningElements";
 import NamedAreas from "./pages/NamedAreas";
+import Aligning from "./pages/Aligning";
+import Justifying from "./pages/Justifying";
+import Placing from "./pages/Placing";
+import ComplexGrid from "./pages/ComplexGrid";
 
 const Container = styled.div`
   display: grid;
@@ -34,14 +38,21 @@ function App() {
           <li>
             <Link to="/named-areas">Named Areas</Link>
           </li>
-          <li>Aligning</li>
-          <li>Justifying</li>
-          <li>Placing</li>
-          <li>Spacing</li>
-          <li>Repeating</li>
+          <li>
+            <Link to="/aligning">Aligning</Link>
+          </li>
+          <li>
+            <Link to="/justifying">Justifying</Link>
+          </li>
+          <li>
+            <Link to="/placing">Placing</Link>
+          </li>
+          {/* <li>Spacing</li>
+          <li>Repeating</li> */}
           <li>Responsive Utilities</li>
-          <li>The Holy Grail Layout</li>
-          <li>Complex Grid</li>
+          <li>
+            <Link to="/complex-grid">Complex Grid</Link>
+          </li>
         </ol>
         <Switch>
           <Route path="/setting-up">
@@ -55,6 +66,18 @@ function App() {
           </Route>
           <Route path="/named-areas">
             <NamedAreas />
+          </Route>
+          <Route path="/aligning">
+            <Aligning />
+          </Route>
+          <Route path="/justifying">
+            <Justifying />
+          </Route>
+          <Route path="/placing">
+            <Placing />
+          </Route>
+          <Route path="/complex-grid">
+            <ComplexGrid />
           </Route>
           <Route path="/" exact>
             <Redirect to="/setting-up" />
