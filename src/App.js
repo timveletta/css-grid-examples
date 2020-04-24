@@ -10,6 +10,7 @@ import Aligning from "./pages/Aligning";
 import Justifying from "./pages/Justifying";
 import Placing from "./pages/Placing";
 import ComplexGrid from "./pages/ComplexGrid";
+import ResponsiveUtilities from "./pages/ResponsiveUtilities";
 
 const Container = styled.div`
   display: grid;
@@ -47,9 +48,9 @@ function App() {
           <li>
             <Link to="/placing">Placing</Link>
           </li>
-          {/* <li>Spacing</li>
-          <li>Repeating</li> */}
-          <li>Responsive Utilities</li>
+          <li>
+            <Link to="/responsive-utilities">Responsive Utilities</Link>
+          </li>
           <li>
             <Link to="/complex-grid">Complex Grid</Link>
           </li>
@@ -75,6 +76,9 @@ function App() {
           </Route>
           <Route path="/placing">
             <Placing />
+          </Route>
+          <Route path="/responsive-utilities">
+            <ResponsiveUtilities />
           </Route>
           <Route path="/complex-grid">
             <ComplexGrid />
