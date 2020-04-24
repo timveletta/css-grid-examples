@@ -4,7 +4,7 @@ import LiveCodeEditor from "../components/LiveCodeEditor";
 const NamedAreas = () => {
   return (
     <LiveCodeEditor
-      code={`
+      code={`() => {
     const Container = styled.div\`
       display: grid;
       grid-template-columns: 1fr 5fr 1fr;
@@ -36,7 +36,7 @@ const NamedAreas = () => {
       grid-area: footer;
     \`;
 
-    render(
+    return (
       <Container>
         <Header>Header</Header>
         <Nav>Nav</Nav>
@@ -45,7 +45,7 @@ const NamedAreas = () => {
         <Footer>Footer</Footer>  
       </Container>
     )
-  `}
+    }`}
     />
   );
 };

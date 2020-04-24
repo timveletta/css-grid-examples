@@ -4,7 +4,7 @@ import LiveCodeEditor from "../components/LiveCodeEditor";
 const SettingUp = () => {
   return (
     <LiveCodeEditor
-      code={`
+      code={`() => {
     const Container = styled.div\`
       display: grid;
       grid-template-columns: 1fr 5fr 1fr;
@@ -14,7 +14,7 @@ const SettingUp = () => {
       height: 300px;
     \`;
 
-    render(
+    return (
       <Container>
         <Block>Header 1</Block>
         <Block>Header 2</Block>
@@ -27,7 +27,7 @@ const SettingUp = () => {
         <Block>Footer 3</Block> 
       </Container>
     )
-  `}
+    }`}
     />
   );
 };

@@ -4,7 +4,7 @@ import LiveCodeEditor from "../components/LiveCodeEditor";
 const MixedUnits = () => {
   return (
     <LiveCodeEditor
-      code={`
+      code={`() => {
     const Container = styled.div\`
       display: grid;
       grid-template-columns: 300px 3fr 1fr 20%;
@@ -13,7 +13,7 @@ const MixedUnits = () => {
       height: 300px;
     \`;
 
-    render(
+    return (
       <Container>
         <Block>Column 1</Block>
         <Block>Column 2</Block>
@@ -21,7 +21,7 @@ const MixedUnits = () => {
         <Block>Column 4</Block>
       </Container>
     )
-  `}
+    }`}
     />
   );
 };

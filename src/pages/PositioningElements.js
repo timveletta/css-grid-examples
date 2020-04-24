@@ -4,7 +4,7 @@ import LiveCodeEditor from "../components/LiveCodeEditor";
 const PositioningElements = () => {
   return (
     <LiveCodeEditor
-      code={`
+      code={`() => {
     const Container = styled.div\`
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -35,7 +35,7 @@ const PositioningElements = () => {
       grid-area: 3 / 3 / span 2 / span 2;
     \`;
 
-    render(
+    return (
       <Container>
         <ColumnPositioning>Column Positioning</ColumnPositioning>
         <RowPositioning>Row Positioning</RowPositioning>
@@ -45,7 +45,7 @@ const PositioningElements = () => {
         <AreaSpanning>Area Spanning</AreaSpanning>
       </Container>
     )
-  `}
+    }`}
     />
   );
 };
